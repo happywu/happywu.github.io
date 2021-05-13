@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Contrastive Learning of Image Representations withCross-Video Cycle-Consistency">
+    <meta name="author" content="Haiping Wu,
+                                Xiaolong Wang">
+
+    <title>Contrastive Learning of Image Representations withCross-Video Cycle-Consistency</title>
+    <!-- Bootstrap core CSS -->
+    <!--link href="bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+    <!--    <link rel="icon" href="img/favicon.gif" type="image/gif">-->
+</head>
+
+<body>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container"></div>
+    <h2>Contrastive Learning of Image Representations <br> with Cross-Video Cycle-Consistency</h2>
+    <!-- <h3>NeurIPS 2020 (Oral)</h3> -->
+<!--            <p class="abstract">An interpretable, data-efficient, and scalable neural scene representation.</p>-->
+    <hr>
+    <p class="authors">
+        <a href="https://scholar.google.com/citations?user=Yv-H6F4AAAAJ&hl=en&oi=ao"> Haiping Wu</a>,
+        <a href="https://xiaolonw.github.io"> Xiaolong Wang</a>
+    </p>
+    <div class="btn-group" role="group" aria-label="Top menu">
+        <a class="btn btn-primary" href="">Paper</a>
+        <a class="btn btn-primary" href="">Code (Coming soon)</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="section">
+        <img src="img/cycle.gif" width=90% height=90% />
+        <hr>
+        <p>
+            Recent works have advanced the performance of self-supervised representation learning by a large margin. The core among these methods is intra-image invariance learning.
+            Two different transformations of one image instance are considered as a positive sample pair, where various tasks are designed to learn invariant representations by comparing the pair. Analogically, for video data, representations of frames from the same video are trained to be closer than frames from other videos, i.e. intra-video invariance. However, cross-video relation has barely been explored for visual representation learning. Unlike intra-video invariance, ground-truth labels of 
+            cross-video relation is usually unavailable without human labors. In this paper, we propose a novel contrastive learning method which explores the cross-video relation by using cycle-consistency for general image representation learning. This allows to collect positive sample pairs across different video instances, which we hypothesize will lead to higher-level semantics. We validate our method by transferring our image representation to multiple downstream tasks including visual object tracking, image classification, and action recognition. We show significant improvement over state-of-the-art contrastive learning methods.
+
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Representation learning pipeline</h2>
+        <hr>
+        <img src="img/pipeline.gif" width=90% height=90% />
+    </div>
+
+    <div class="section">
+        <h2>Visual Object Tracking on OTB-100</h2>
+        <hr>
+        <div class="row align-items-center">
+            <div class="col-sm-4">
+                <img src="img/ours_r18_BlurCar3.gif" style="width:100%" height=100%>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/ours_r18_Human9.gif" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="img/ours_r18_Subway.gif" style="width:100%" height=100%>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <h2>Image Classification</h2>
+        <hr>
+        <img src="img/image_cls.png" width=90% height=90% class="center"/>
+    </div>
+
+    <div class="section">
+        <h2>Video Action Recognition</h2>
+        <hr>
+        <img src="img/ucf.png" width=80% height=80% class="center"/>
+
+    </div>
+
+    <div class="section">
+        <h2>Paper</h2>
+        <hr>
+        <img src="a_tri.pdf" width=90% height=90% />
+    </div>
+
+    <div class="section">
+        <h2>Bibtex</h2>
+        <hr>
+        <div class="bibtexsection">
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p><span style="color: #AAAAAA">Acknowledgment: website template from <a
+            href="https://vsitzmann.github.io/siren/">SIREN</a></span></p>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
